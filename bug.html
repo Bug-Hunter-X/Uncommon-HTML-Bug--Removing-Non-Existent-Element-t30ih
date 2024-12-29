@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will be hidden if JavaScript is enabled.
+  </div>
+  <script>
+    //Bug: This script attempts to remove an element that might not exist.
+    if (document.getElementById("myDiv")) {
+      document.getElementById("myDiv").remove();
+    }
+  </script>
+</body>
+</html>
