@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text will be hidden if JavaScript is enabled.
+  </div>
+  <script>
+    //Solution: Check if the element exists before removing it.
+    const element = document.getElementById("myDiv");
+    if (element) {
+      element.remove();
+    }
+  </script>
+</body>
+</html>
